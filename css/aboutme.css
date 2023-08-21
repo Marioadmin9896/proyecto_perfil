@@ -1,0 +1,30 @@
+.subtitulo{
+	margin: 15px;
+	padding: 0;
+}
+
+.aboutME{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 30px;
+}
+
+#devoloperIMG{
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 20px; 
+}
+article{
+    width: 100%;
+    padding: 25px;
+}
+
+#aboutme_txt{
+    font-size: 25px;
+    font-weight: bold;
+}
+

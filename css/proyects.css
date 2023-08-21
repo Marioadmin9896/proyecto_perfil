@@ -1,0 +1,29 @@
+.subtitulo{
+	margin: 15px;
+	padding: 0;
+}
+
+.proyectos{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.caja_proyectos{
+     padding: 5px;
+}
+
+.proximamente img{
+    padding: 20px;
+    margin: 150px;
+}
+
+.mantenimiento{
+    width: 100%
+    height: auto;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+}

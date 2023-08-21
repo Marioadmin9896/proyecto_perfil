@@ -1,0 +1,51 @@
+.subtitulo{
+	margin: 15px;
+	padding: 0px;
+}
+
+/*
+.contenedor{
+	max-width: 100%
+	margin: 0 auto;
+	padding: 30px;
+}
+
+img{
+	float: right;
+	margin: 0px 50px 0px 50px;
+	max-width: 25%;
+	height: auto;
+}
+
+*/
+
+.presentacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 50px;
+}
+
+#presentacionIMG{
+    width: 350px;
+    height: 350px;
+    border-radius: 9999px;
+    border: 2px solid black; 
+    background-color: aliceblue;
+    margin: 40px; 
+}
+
+
+#presentacionP{
+    font-size: 25px;
+    font-weight: bold;
+}
+article{
+    width: 100%;
+    padding: 25px;
+}
+
+.dev{
+	font-size: 40px;
+}
