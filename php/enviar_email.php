@@ -29,7 +29,7 @@ $asunto = 'Mensaje de mi sitio web'; // MSJ DE MI CORREO//
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location : index.html"); // TE REGRESA AL INDEX DE LA PAGINA//
+header("Location : https://mariotapiaayala.netlify.app"); // TE REGRESA AL INDEX DE LA PAGINA//
 ?>
 
 ?>
