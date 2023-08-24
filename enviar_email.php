@@ -1,42 +1,20 @@
 <?php
 
-if($_SERVER['REQUEST_METHOD']!= 'POST') {
-	header("Location: index.html" );
-}
+//correo a donde llegue el msj
+$destinatario = 'tapiaayalamariogmail.com';
 
-//USO DEL ARCHIVO PHPMAILER//
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/Exception.php';
-
-//USO DE LA CLASE PHPMAILER
-
-use PHPMailer\PHPMailer\PHPMailer;
-
-/// VALORES QUE TOMA NAME DEL FORMULARIO///
 $nombre = $_POST['nombre'];
-$mail = $_POST['email'];
+$email = $_POST['mail'];
 $pais = $_POST['pais'];
 $mensaje = $_POST['mensaje'];
 
-if ( empty(trim($nombre)) ) $nombre = 'anonimo';
+$header = "Enviado desde la pagina de Mario Tapia Ayala";
+$mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre;
 
-$body = <<<HTML 
-		<h1>Contacto desde la web</h1>
-		<p>De: $nombre / $mail</p>
-		<h2>Mensaje</h2>
-		$mensaje
-HTML;
+mail($destinatario, $pais, $mensajeCompleto, $header);
 
-$mailer = new PHPMailer();
 
-$mailer->setFrom($mail, "$nombre");
-$mailer->addAddress('tapiaayalamario@gmail.com','Sitio web');
-$mailer->Subject = "Mensaje web del pais: $pais";
-$mailer->msgHTML($body);
-$mailer->Altbody = strip_tags($body); // caso que no acepte html, strip tags elimina etiquetas html
-
-$rta = $mailer->send(); // enviar mail
-
-var_dump($rta);
+echo "<script>alert('correo enviado exitosamente')</script>";
+echo "<script> setTimeout(\"location.href='index.html'\",1000)</script>";
 
 ?>
