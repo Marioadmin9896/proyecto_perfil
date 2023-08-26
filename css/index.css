@@ -1,26 +1,28 @@
 /****-------MOVIL---------- ******/
-
-@media (max-width: 600px){
+/*DESDE 320PX HASTA 767PX*/
+@media (min-width: 320px) and (max-width: 767px){
   .subtitulo{
   margin: 15px;
   padding: 0px;
 }
 
 .presentacion{
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  margin: 50px;
+  padding: 25px;
+  margin: 25px;
 }
 
 #presentacionIMG{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 9999px;
     border: 2px solid black; 
     background-color: aliceblue;
-    margin: 40px; 
+    margin:auto;
+}
+.dev{
+  font-size: 40px;
 }
 
 
@@ -31,19 +33,17 @@
 }
 article{
     width: 100%;
-    padding: 25px;
+    padding: 20px;
 }
 
-.dev{
-  font-size: 40px;
-}
+
 
 }
 
 /****-------tablet----------******/
 
 
-@media(min-width: 767px) and (max-width: 990px){
+@media(min-width: 768px) and (max-width: 1024px){
   .subtitulo{
   margin: 15px;
   padding: 0px;
@@ -84,7 +84,7 @@ article{
 
 /****-------ESCRITORIO---------- ******/
 
-@media(min-width: 991px){
+@media(min-width: 1025px){
   .subtitulo{
   margin: 15px;
   padding: 0px;
@@ -122,4 +122,5 @@ article{
 }
 
 }
+
 

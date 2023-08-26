@@ -1,7 +1,12 @@
 
 /****-------mobile---------- ******/
 
-@media(max-width: 600px){
+@media (min-width: 320px) and (max-width: 767px){
+.subtitulo{
+	margin: 15px;
+	padding: 0;
+}
+
 .contenedor{
 	background-color: #05161a;
 	border-radius: 10px;
@@ -48,7 +53,13 @@ input[type="submit"]:hover{
 
 /****-------tablet---------- ******/
 
-@media(min-width: 767px) and (max-width: 990px){
+@media(min-width: 768px) and (max-width: 1024px){
+
+.subtitulo{
+	margin: 15px;
+	padding: 0;
+}
+
 
 .contenedor{
 	background-color: #05161a;
@@ -96,7 +107,7 @@ input[type="submit"]:hover{
 /****-------escritorio---------- ******/
 
 
-@media(min-width: 991px){
+@media (min-width: 1025px){
 	.subtitulo{
     margin: 15px;
     padding: 0px;
