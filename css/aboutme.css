@@ -11,16 +11,16 @@
 .aboutME{
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 0px;
   margin: 30px;
 }
 
 #devoloperIMG{
-    width: 320px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     border: 2px solid black;
-  margin: 0px;
+    margin: 0 auto;
 
 }
 article{
@@ -45,7 +45,6 @@ article{
 }
 
 .aboutME{
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
@@ -53,15 +52,15 @@ article{
 }
 
 #devoloperIMG{
-    width: 450px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     border: 2px solid black;
-    margin: 20px; 
+    margin: 0 auto;
 }
 article{
     width: 100%;
-    padding: 25px;
+    padding: 0px;
 }
 
 #aboutme_txt{
